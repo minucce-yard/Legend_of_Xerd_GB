@@ -1,0 +1,22 @@
+/*
+Source:
+	minucce
+
+
+License:
+	Code should be used only for educational, documentation and modding purposes.
+	Please keep derivative work open source.
+*/
+
+
+.org 0x62d1
+.area 0x62d7 - orga()
+
+
+	ldh a, (0x0f)				; simulate LCD interrupt
+	set 1, a
+	ldh (0x0f), a
+
+
+.endarea
+; .notice int(0x62d7 - orga())

@@ -1,0 +1,36 @@
+/*
+Program:
+	Z80 armips assembler by Prof9
+	https://github.com/Prof9/armips/tree/gameboy
+
+
+Indent:
+	Tab space = 4
+*/
+
+
+
+.gb
+.open "Zerd no Densetsu (Japan).gb",0
+
+
+
+.definelabel FULL_BUILD, 9
+
+
+
+
+.if FULL_BUILD >= 1
+
+
+/*	Minimum		*/
+
+
+	.include "gbc_compatible/main.txt"
+
+
+.endif
+
+
+
+.close
